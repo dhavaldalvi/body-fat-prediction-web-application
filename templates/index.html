@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Fat Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Body Fat Percentage Prediction</h1>
+            <form action="/predict" method="POST">
+                <div class="input-group">
+                    <label for="age">Age (years):</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" step="0.1" id="weight" name="weight" required>
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" step="0.1" id="height" name="height" required>
+                </div>
+                <div class="input-group">
+                    <label for="neck">Neck Circumference (cm):</label>
+                    <input type="number" step="0.1" id="neck" name="neck" required>
+                </div>
+                <div class="input-group">
+                    <label for="chest">Chest Circumference (cm):</label>
+                    <input type="number" step="0.1" id="chest" name="chest" required>
+                </div>
+                <div class="input-group">
+                    <label for="abdomen">Abdomen Circumference (cm):</label>
+                    <input type="number" step="0.1" id="abdomen" name="abdomen" required>
+                </div>
+                <div class="input-group">
+                    <label for="hip">Hip Circumference (cm):</label>
+                    <input type="number" step="0.1" id="hip" name="hip" required>
+                </div>
+                <div class="input-group">
+                    <label for="thigh">Thigh Circumference (cm):</label>
+                    <input type="number" step="0.1" id="thigh" name="thigh" required>
+                </div>
+                <div class="input-group">
+                    <label for="knee">Knee Circumference (cm):</label>
+                    <input type="number" step="0.1" id="knee" name="knee" required>
+                </div>
+                <div class="input-group">
+                    <label for="ankle">Ankle Circumference (cm):</label>
+                    <input type="number" step="0.1" id="ankle" name="ankle" required>
+                </div>
+                <div class="input-group">
+                    <label for="bicep">Bicep (Extended) Circumference (cm):</label>
+                    <input type="number" step="0.1" id="bicep" name="bicep" required>
+                </div>
+                <div class="input-group">
+                    <label for="forearm">Forearm Circumference (cm):</label>
+                    <input type="number" step="0.1" id="forearm" name="forearm" required>
+                </div>
+                <div class="input-group">
+                    <label for="wrist">Wrist Circumference (cm):</label>
+                    <input type="number" step="0.1" id="wrist" name="wrist" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
