@@ -51,4 +51,5 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 pipeline = make_pipeline(StandardScaler(), Lasso(alpha=0.75))
 pipeline.fit(X_train, y_train)
 
+# Saving model
 pickle.dump(pipeline, open('model.pkl', 'wb'))
