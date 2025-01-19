@@ -13,7 +13,7 @@ def run_model_script():
     if not initialized:
         subprocess.run(['python','model.py'], check=True)
         initialized = True
-
+# Calling function to run the model file
 run_model_script()
 
 # Loading model file
@@ -51,5 +51,6 @@ def predict():
 
     return render_template('result.html', result=round(body_fat_percentage, 2))
 
+# Running app
 if __name__ == '__main__':
     app.run(debug=True)
